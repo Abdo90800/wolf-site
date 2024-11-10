@@ -38,7 +38,7 @@ const HeaderSection = () => (
       <Text
         text={
           <>
-            <span>We are here to create the best software product for</span>
+            <span>We are here to create the best software product for.</span>
             <br />
             <span>your business</span>
           </>
