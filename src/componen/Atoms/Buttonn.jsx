@@ -1,19 +1,9 @@
-// src/components/atoms/Button.js
+import main from "../../styles/main.scss";
+
 import React from "react";
 import Button from "@mui/material/Button";
 const Buttonn = ({ children, styleClass }) => (
-  <Button
-    style={{
-      color: "#fff",
-      backgroundColor: "#121212",
-      borderRadius: "10px",
-      padding: "10px 20px",
-      fontSize: "16px",
-      fontWeight: "bold",
-    }}
-  >
-    {children}
-  </Button>
+  <Button className="custom-button">{children}</Button>
 );
 
 export default Buttonn;

@@ -3,43 +3,20 @@ import React from "react";
 import Text from "../atoms/Text";
 
 const CallToActionCard = () => (
-  <div
-    style={{
-      display: "flex",
-      flexDirection: "column",
-      alignItems: "center",
-      gap: "10px",
-      marginTop: "20px",
-    }}
-  >
-    <div
-      style={{
-        display: "flex",
-        alignItems: "center",
-        gap: "10px",
-        width: "192px",
-        height: "48px",
-        borderRadius: "12px",
-        backgroundColor: "#121212",
-        border: "1px solid #575760",
-        justifyContent: "center",
-      }}
-    >
-      <img
-        src="/logoIslam.png"
-        alt="Profile"
-        className="profile-image"
-        style={{ borderRadius: "8px" }}
-      />
+  <div className="call-to-action-card">
+    <div className="div-text">
+      <img src="/logoIslam.png" alt="Profile" className="profile-image" />
       <Text
+        className="name"
         text="Free 15-min call"
-        style={{ color: "#FFFFFF", fontWeight: "400", fontSize: "16px" }}
+        style={{ fontSize: "16px", fontWeight: "600", color: "#E1E1E2" }}
       />
     </div>
 
     <Text
+      className="availability-status"
       text={
-        <div style={{ display: "flex", alignItems: "center", gap: "4px" }}>
+        <div className="availability">
           <span style={{}}>
             <svg
               width="16"
