@@ -1,7 +1,8 @@
-// src/components/templates/HomeTemplate.js
+
 import React from "react";
 import HeaderSection from "../organisms/HeaderSection";
 import BlackNav from "../Atoms/BlackNav";
+import Home from "../pages/Home";
 
 const HomeTemplate = () => (
   <>
@@ -15,6 +16,8 @@ const HomeTemplate = () => (
     >
       <HeaderSection />
     </div>
+<Home/>
+    
   </>
 );
 

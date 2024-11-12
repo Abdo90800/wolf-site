@@ -139,3 +139,26 @@
   color: #FFFFFF;
   text-align: center;
 }
+
+.mySwiper {
+  position: relative;
+  padding: 0 50px;
+}
+.mySwiper::before, .mySwiper::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: 400px;
+  z-index: 10;
+}
+.mySwiper::before {
+  left: 0;
+  background: -webkit-gradient(linear, left top, right top, from(rgb(255, 255, 255)), to(rgba(255, 255, 255, 0)));
+  background: linear-gradient(to right, rgb(255, 255, 255), rgba(255, 255, 255, 0));
+}
+.mySwiper::after {
+  right: 0;
+  background: -webkit-gradient(linear, right top, left top, from(rgb(255, 255, 255)), to(rgba(255, 255, 255, 0)));
+  background: linear-gradient(to left, rgb(255, 255, 255), rgba(255, 255, 255, 0));
+}
