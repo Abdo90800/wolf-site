@@ -3,6 +3,7 @@ import React from "react";
 import HeaderSection from "../organisms/HeaderSection";
 import BlackNav from "../Atoms/BlackNav";
 import Home from "../pages/Home";
+import OurServicesHome from "../Organisms/OurServicesHome";
 
 const HomeTemplate = () => (
   <>
@@ -17,6 +18,7 @@ const HomeTemplate = () => (
       <HeaderSection />
     </div>
 <Home/>
+<OurServicesHome/>
     
   </>
 );

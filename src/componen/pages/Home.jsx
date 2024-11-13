@@ -3,11 +3,11 @@
 import React from "react";
 // Import Swiper React components
 import { Swiper, SwiperSlide } from "swiper/react";
-import Avatar from "@mui/joy/Avatar";
+
+// Import required components
 import Card from "@mui/joy/Card";
 import CardContent from "@mui/joy/CardContent";
-import CardOverflow from "@mui/joy/CardOverflow";
-import CardActions from "@mui/joy/CardActions";
+
 import Typography from "@mui/joy/Typography";
 
 // Import Swiper styles
@@ -19,10 +19,22 @@ import { Pagination } from "swiper/modules";
 import Container from "@mui/material/Container";
 import Image from "next/image";
 import cardData from "../../data/cardData";
+import Text from "../Atoms/Text";
 
 export default function Home() {
   return (
-    <Container sx={{ mt: 10 }}>
+    <Container sx={{ mt: 10, mb: 20 }}>
+      <Text
+        text={
+          <div className="pairenttextclients">
+            <span className="textListen">Don’t Just Listen to Us</span>
+
+            <span className="textclients">what our clients are saying</span>
+          </div>
+        }
+        className="textListen"
+      />
+
       <Swiper
         slidesPerView={1}
         spaceBetween={10}

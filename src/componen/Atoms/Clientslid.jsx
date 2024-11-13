@@ -1,12 +1,31 @@
-// components/atoms/CardComponent.js
-const Clientslid = ({ product }) => {
+// components/molecules/CardComponent.js
+import React from "react";
+import Card from "@mui/joy/Card";
+import CardContent from "@mui/joy/CardContent";
+import AvatarImage from "../atoms/AvatarImage";
+import CardText from "../atoms/CardText";
+
+const CardComponent = ({ photo, description }) => {
   return (
-    <div className="card p-4 bg-white shadow-md rounded-lg">
-      <img src={product.image} alt={product.name} className="w-full h-40 object-cover rounded-t-lg" />
-      <h2 className="font-semibold text-lg text-gray-800 mt-4">{product.name}</h2>
-      <p className="text-gray-600">{product.description}</p>
-    </div>
+    <Card
+      sx={{
+        width: 302,
+        maxWidth: "100%",
+        height: "169px",
+        border: "none",
+        borderRadius: "16px",
+        overflow: "hidden",
+        position: "relative",
+        backgroundColor: "white",
+        cursor: "pointer",
+      }}
+    >
+      <CardContent sx={{ alignItems: "center", textAlign: "center" }}>
+        <AvatarImage src={photo} alt="Avatar Image" />
+        <CardText text={description} />
+      </CardContent>
+    </Card>
   );
 };
 
-export default Clientslid;
+export default CardComponent;
