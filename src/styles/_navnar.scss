@@ -63,6 +63,12 @@
             backdrop-filter: blur(50px);
             background-color: #FFFFFF80;
             margin-bottom: 80px;
+            position: fixed;
+            top: 75px;
+            left: 50%;
+            transform: translateX(-50%);
+            z-index: 1000;
+            border: 1px solid #E1E1E1;
         }
         
         .navbar-content {
