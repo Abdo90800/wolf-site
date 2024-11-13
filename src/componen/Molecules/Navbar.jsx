@@ -5,9 +5,11 @@ import Link from "../atoms/Link";
 import Buttonn from "../Atoms/Buttonn";
 
 const Navbar = () => (
-  <div className="NAVBAR">
+  <div className="NAVBAR" style={{ position: "fixed", top:"75px", right:"320px",zIndex:"100"}}>
     <div className="navbar-content">
-      <img src="/logo.png" alt="Logo" className="logo" />
+    <Link href="/">
+        <img src="/logo.png" alt="Logo" className="logo" />
+    </Link>
       <Link href="#services">Services</Link>
       <Link href="#work">Work</Link>
       <Link href="#pricing">Pricing</Link>
