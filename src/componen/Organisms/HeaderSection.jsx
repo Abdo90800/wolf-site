@@ -6,15 +6,7 @@ import Text from "../atoms/Text";
 import CallToActionCard from "../molecules/CallToActionCard";
 
 const HeaderSection = () => (
-  <header
-    style={{
-      width: "100%",
-      height: "530px",
-      display: "flex",
-      flexDirection: "column",
-      alignItems: "center",
-    }}
-  >
+  <header className="header-section">
     <div>
       <Navbar />
     </div>
@@ -27,15 +19,10 @@ const HeaderSection = () => (
             <span> Out in The Digital Era</span>
           </>
         }
-        style={{
-          fontSize: "48px",
-          fontWeight: "600",
-          color: "white",
-          lineHeight: "72px",
-          textAlign: "center",
-        }}
+    
       />
       <Text
+      className="text-weare"
         text={
           <>
             <span>We are here to create the best software product for.</span>
@@ -50,7 +37,7 @@ const HeaderSection = () => (
           color: "white",
           lineHeight: "24px",
           textAlign: "center",
-          color: "#E1E1E2",
+      
         }}
       />
       <CallToActionCard />

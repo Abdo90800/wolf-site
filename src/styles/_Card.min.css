@@ -1,0 +1,1 @@
+.mySwiper{position:relative;padding:0 50px}.mySwiper::before,.mySwiper::after{content:"";position:absolute;top:0;bottom:0;width:400px;z-index:10}.mySwiper::before{left:0;background:linear-gradient(to right, #fff, rgba(255,255,255,0))}.mySwiper::after{right:0;background:linear-gradient(to left, #fff, rgba(255,255,255,0))}

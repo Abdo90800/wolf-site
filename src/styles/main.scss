@@ -1,29 +1,6 @@
-/* src/styles/main.scss */
-
-.header-section {
-    background: url('/background.jpg') no-repeat center center;
-    background-size: cover;
-    color: white;
-}
-
-.navbar {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 20px;
-}
-
-.main-content {
-    text-align: center;
-    margin-top: 100px;
-}
-
-.cta-card {
-    display: flex;
-    align-items: center;
-    gap: 10px;
-    background: #333;
-    padding: 10px;
-    border-radius: 8px;
-    margin-top: 20px;
-}
+@use "./Buttonstyle" as *;
+@use "./navnar" as *;
+@use "./Card" as *;
+@use "./slider" as *;
+@use "./Ower-service.scss" as *;
+@use "./Ourwork" as *;

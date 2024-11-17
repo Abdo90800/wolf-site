@@ -1,7 +1,10 @@
-// src/components/templates/HomeTemplate.js
+
 import React from "react";
 import HeaderSection from "../organisms/HeaderSection";
 import BlackNav from "../Atoms/BlackNav";
+import Home from "../Organisms/Home";
+import OurServicesHome from "../Organisms/OurServicesHome";
+import Ourwork from "../Organisms/Ourwork";
 
 const HomeTemplate = () => (
   <>
@@ -15,6 +18,10 @@ const HomeTemplate = () => (
     >
       <HeaderSection />
     </div>
+<Home/>
+<OurServicesHome/>
+<Ourwork/>
+    
   </>
 );
 

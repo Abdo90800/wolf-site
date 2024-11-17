@@ -1,0 +1,21 @@
+.mySwiper {
+    position: relative;
+    padding: 0 50px; // Adjust padding to make space for the shadows
+    &::before,
+    &::after {
+        content: "";
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        width: 400px; // Adjust width as needed
+        z-index: 10;
+    }
+    &::before {
+        left: 0;
+        background: linear-gradient(to right, rgba(255, 255, 255, 1), rgba(255, 255, 255, 0));
+    }
+    &::after {
+        right: 0;
+        background: linear-gradient(to left, rgba(255, 255, 255, 1), rgba(255, 255, 255, 0));
+    }
+}
