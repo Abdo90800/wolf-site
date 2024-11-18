@@ -9,7 +9,8 @@ import Card from "@mui/joy/Card";
 import CardContent from "@mui/joy/CardContent";
 
 import Typography from "@mui/joy/Typography";
-
+import Rating from "@mui/material/Rating";
+import StarIcon from "@mui/icons-material/Star";
 // Import Swiper styles
 import "swiper/css";
 import "swiper/css/pagination";
@@ -20,8 +21,21 @@ import Container from "@mui/material/Container";
 import Image from "next/image";
 import cardData from "../../data/cardData";
 import Text from "../Atoms/Text";
+const labels = {
+  0.5: "Useless",
+  1: "Useless+",
+  1.5: "Poor",
+  2: "Poor+",
+  2.5: "Ok",
+  3: "Ok+",
+  3.5: "Good",
+  4: "Good+",
+  4.5: "Excellent",
+  5: "Excellent+",
+};
 
 export default function Home() {
+  const value = 3.5;
   return (
     <Container sx={{ mt: 10, mb: 20 }}>
       <Text
@@ -60,19 +74,7 @@ export default function Home() {
       >
         {cardData.map((e, index) => (
           <SwiperSlide key={index}>
-            <Card
-              sx={{
-                width: 302,
-                maxWidth: "100%",
-                height: "169px",
-                border: "none",
-                borderRadius: "16px",
-                overflow: "hidden",
-                position: "relative",
-                backgroundColor: "white",
-                cursor: "pointer",
-              }}
-            >
+            <Card className="card">
               <CardContent sx={{ alignItems: "center", textAlign: "center" }}>
                 <Image
                   src={e.photo}
@@ -85,7 +87,16 @@ export default function Home() {
                 />
                 <Typography level="body-sm" sx={{ maxWidth: "24ch" }}>
                   {e.description}
-                </Typography>
+                </Typography>{" "}
+                <Rating
+                  name="text-feedback"
+                  value={value}
+                  readOnly
+                  precision={5}
+                  emptyIcon={
+                    <StarIcon style={{ opacity: 0.55 }} fontSize="inherit" />
+                  }
+                />
               </CardContent>
             </Card>
           </SwiperSlide>

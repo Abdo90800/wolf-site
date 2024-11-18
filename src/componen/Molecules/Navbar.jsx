@@ -1,7 +1,6 @@
 // src/components/molecules/Navbar.js
 import React from "react";
 import Link from "../atoms/Link";
-// import Buttonn from "../atoms/Buttonn";
 import Buttonn from "../Atoms/Buttonn";
 
 const Navbar = () => (
