@@ -5,6 +5,7 @@ import BlackNav from "../Atoms/BlackNav";
 import Home from "../Organisms/Home";
 import OurServicesHome from "../Organisms/OurServicesHome";
 import Ourwork from "../Organisms/Ourwork";
+import SliderImgPhone from "../Organisms/SliderImgPhone";
 
 const HomeTemplate = () => (
   <>
@@ -21,6 +22,7 @@ const HomeTemplate = () => (
 <Home/>
 <OurServicesHome/>
 <Ourwork/>
+<SliderImgPhone/>
     
   </>
 );
