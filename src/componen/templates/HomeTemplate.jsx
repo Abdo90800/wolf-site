@@ -4,6 +4,7 @@ import HeaderSection from "../organisms/HeaderSection";
 import Home from "../Organisms/Home";
 import OurServicesHome from "../Organisms/OurServicesHome";
 import Ourwork from "../Organisms/Ourwork";
+import SliderImgPhone from "../Organisms/SliderImgPhone";
 
 const HomeTemplate = () => (
   <>
@@ -19,9 +20,10 @@ const HomeTemplate = () => (
     >
       <HeaderSection />
     </div>
-    <Home />
-    <OurServicesHome />
-    <Ourwork />
+<Home/>
+<OurServicesHome/>
+<Ourwork/>
+    
   </>
 );
 
